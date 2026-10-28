@@ -162,12 +162,12 @@ EXEC sp_CancelInvoice @InvoiceID = 8;
 - Partition bảng `Invoice` theo năm, Columnstore cho báo cáo
 - Kết nối ứng dụng web/API (ASP.NET, Node.js)
 
-## 9. Thành viên nhóm
+## 9. 👥 Thành viên & phân công
 
-| STT | Họ tên | MSSV | Vai trò |
-|---|---|---|---|
-| 1 | _..._ | _..._ | _..._ |
-| 2 | _..._ | _..._ | _..._ |
-| 3 | _..._ | _..._ | _..._ |
+| Thành viên | Vai trò | Công việc chính |
+|---|---|---|
+| **Nguyễn Hữu Trí** | Khởi tạo dự án & Thiết kế CSDL | Phân tích nghiệp vụ bán lẻ và tích điểm, thiết kế mô hình dữ liệu (ERD 15 bảng chuẩn 3NF), xây dựng file `01_schema.sql` (ràng buộc PK/FK/CHECK/UNIQUE, Computed Column Persisted), thiết lập chỉ mục (Covering/Filtered Index), phân quyền theo Role và chiến lược sao lưu trong `07_indexes_security.sql`. |
+| **Hà Phương Bình** | Lập trình T-SQL & Xử lý nghiệp vụ | Xây dựng các hàm tính toán và Stored Procedures giao dịch trong `02_functions_procedures.sql` (`sp_RegisterCustomer`, `sp_CheckoutInvoice`, `sp_CancelInvoice` kết hợp `TRANSACTION`, `TRY...CATCH`, `UPDLOCK/HOLDLOCK`), phát triển các Trigger tự động nâng hạng, khóa hóa đơn và nhập kho trong `03_triggers.sql`. |
+| **Nguyễn Quốc Duy** | Dữ liệu mẫu, Báo cáo & Truy vấn nâng cao | Khởi tạo bộ dữ liệu mẫu (Seed Data) chuẩn hóa và kịch bản demo trong `04_seed_data.sql`, thiết kế 5 View báo cáo quản trị và đối soát điểm trong `05_views.sql`, xây dựng 11 truy vấn phân tích chuyên sâu (Window Functions, CTE đệ quy cây danh mục, PIVOT doanh thu, phân khúc khách hàng RFM) trong `06_queries.sql`. |
 
-**Giảng viên hướng dẫn:** _..._
+**Giảng viên hướng dẫn:** Phan Đức Trí
