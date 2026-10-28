@@ -1,0 +1,12 @@
+# Backup & dữ liệu cục bộ
+*.bak
+*.trn
+*.mdf
+*.ldf
+
+# Hệ điều hành / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
